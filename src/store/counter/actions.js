@@ -5,6 +5,6 @@ export const increment = () => ({
   type: COUNTER_INCREMENT
 })
 
-export const decrement = (payload) => ({
+export const decrement = () => ({
   type: COUNTER_DECREMENT
 })
