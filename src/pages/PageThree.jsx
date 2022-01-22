@@ -23,6 +23,10 @@ import {
   InputLeftAddon,
 } from '@chakra-ui/react'
 
+const PageOne = () => {
+  window.location.replace("https://khairullin.vercel.app/PageOne");
+}
+
 export default function PageThree() {
 
   return (
@@ -31,7 +35,8 @@ export default function PageThree() {
       <Box padding={4}>
         <Box overflow="auto" gap={6}>
           <Flex justifyContent={'end'}>
-            <Button colorScheme='blue' marginBottom={"20px"} >
+            <Button colorScheme='blue' marginBottom={"20px"} 
+             onClick={()=> PageOne()}>
               На главную
             </Button>
           </Flex>

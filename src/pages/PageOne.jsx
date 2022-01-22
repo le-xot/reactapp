@@ -11,6 +11,10 @@ import {
   Heading
 } from '@chakra-ui/react'
 
+const PageThree = () => {
+  window.location.replace("https://khairullin.vercel.app/PageThree");
+}
+
 export default function PageOne() {
 
   return (
@@ -18,7 +22,8 @@ export default function PageOne() {
     <Container maxW="7xl" padding={4}>
       <Box padding={4}>
         <Box overflow="auto" gap={6}>
-          <Button colorScheme='blue' marginBottom={"20px"}>
+          <Button colorScheme='blue' marginBottom={"20px"}
+          onClick={()=> PageThree()}>
             Подать объявление
           </Button>
           <Box padding={"10px"} borderRadius={"10px"} backgroundColor={"blue.500"}>

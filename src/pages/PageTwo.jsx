@@ -17,6 +17,14 @@ import {
   Flex
 } from '@chakra-ui/react'
 
+const PageThree = () => {
+  window.location.replace("https://khairullin.vercel.app/PageThree");
+}
+
+const PageOne = () => {
+  window.location.replace("https://khairullin.vercel.app/PageOne");
+}
+
 export default function PageTwo() {
 
   return (
@@ -25,11 +33,13 @@ export default function PageTwo() {
       <Box padding={4}>
         <Box overflow="auto" gap={6}>
           <Flex>
-            <Button colorScheme='blue' marginBottom={"20px"} >
+            <Button colorScheme='blue' marginBottom={"20px"} 
+            onClick={()=> PageThree()}>
               Подать объявление
             </Button>
             <Spacer />
-            <Button colorScheme='blue' marginBottom={"20px"} >
+            <Button colorScheme='blue' marginBottom={"20px"} 
+            onClick={()=> PageOne()}>
               На главную
             </Button>
           </Flex>
