@@ -1,27 +1,30 @@
 import React from "react";
 import {
   Route,
-  Switch
+  Switch,
+  Redirect
 } from "react-router-dom";
 
-import Counter from './pages/Counter';
-import About from './pages/About';
-import Users from './pages/Users';
+import PageTwo from './pages/PageTwo';
+import PageOne from './pages/PageOne';
+import PageThree from './pages/PageThree';
 import Home from './pages/Home';
 
 export default function Router() {
   return (
     <Switch>
-      <Route path="/counter">
-        <Counter />
+      <Route path="/PageTwo">
+        <PageTwo />
       </Route>
-      <Route path="/about">
-        <About />
+      <Route path ="/PageOne">
+        <PageOne />
       </Route>
-      <Route path="/users">
-        <Users />
+      <Route path="/PageThree">
+        <PageThree />
       </Route>
       <Route path="/">
+        <Redirect to={"/PageOne"}>
+        </Redirect>
         <Home />
       </Route>
     </Switch>
