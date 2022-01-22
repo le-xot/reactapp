@@ -8,11 +8,16 @@ import {
   Checkbox,
   UnorderedList,
   ListItem,
-  Heading
+  Heading,
+  Link
 } from '@chakra-ui/react'
 
 const PageThree = () => {
   window.location.replace("https://khairullin.vercel.app/PageThree");
+}
+
+const PageTwo = () => {
+  window.location.replace("https://khairullin.vercel.app/PageTwo");
 }
 
 export default function PageOne() {
@@ -23,7 +28,7 @@ export default function PageOne() {
       <Box padding={4}>
         <Box overflow="auto" gap={6}>
           <Button colorScheme='blue' marginBottom={"20px"}
-          onClick={()=> PageThree()}>
+            onClick={() => PageThree()}>
             Подать объявление
           </Button>
           <Box padding={"10px"} borderRadius={"10px"} backgroundColor={"blue.500"}>
@@ -84,8 +89,10 @@ export default function PageOne() {
                 <ListItem>
                   Комнаты
                 </ListItem>
-                <ListItem>
-                  Квартиры
+                <ListItem  textColor={"blue.300"}>
+                  <a href="https://khairullin.vercel.app/PageTwo">
+                    Квартиры
+                  </a>  
                 </ListItem>
                 <ListItem>
                   Коммерческая недвижимость
@@ -218,7 +225,7 @@ export default function PageOne() {
             </Box>
           </SimpleGrid>
         </Box>
-      </Box>
+      </Box >
     </Container >
 
   )
